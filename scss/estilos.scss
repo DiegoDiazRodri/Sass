@@ -1,0 +1,71 @@
+// 1 patron de colores
+$principal: rgb(64, 129, 69);
+
+
+// 2 modificar las variables de bootstrap
+
+$primary: $principal;
+$enable-shadows: true;
+$enable-gradients: true;
+$btn-padding-y: 0.8rem;
+$btn-padding-x: 1.5rem;
+$btn-border-radius: 1rem;
+
+
+@import "../bootstrap/scss/bootstrap.scss";
+
+.btn-primary {
+    border-bottom: 3px solid rgb(10, 9, 9, 0.9);
+}
+
+.custom-class {
+    display: none;
+}
+
+@include media-breakpoint-up(xs) {
+    .custom-class {
+        display: block;
+        height: 300px;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .custom-class {
+        display: block;
+        background: #115db3;
+        height: 200px;
+    }
+    .img-fluid {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .custom-class {
+        display: flex;
+        background: #16cf4c;
+        height: 400px;
+    }
+    .img-fluid {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .custom-class {
+        display: flex;
+        background: #db1da2;
+        height: 200px;
+    }
+    .img-fluid {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
